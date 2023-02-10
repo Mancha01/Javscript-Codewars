@@ -11,3 +11,6 @@ function areYouPlayingBanjo(name) {
     ? `${name} plays banjo`
     : `${name} does not play banjo`;
 }
+
+areYouPlayingBanjo("Mancha");
+console.log("Hello World");

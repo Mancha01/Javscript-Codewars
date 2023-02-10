@@ -4,6 +4,7 @@ function sumRange(num) {
 }
 
 sumRange(4);
+console.log("me");
 /* 
 The steps:
 1:
