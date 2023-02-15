@@ -17,3 +17,13 @@ function filter_list1(l) {
 }
 
 filter_list([1, 2, "3", "4", 5, 5]);
+
+//Other learnings from this kata:
+//check if a string or number
+//https://linuxhint.com/check-if-string-number-javascript/#:~:text=In%20JavaScript%2C%20a%20built%2Din,the%20string%20into%20a%20number.
+
+//using multiple conditions in a filter method:
+//https://sabe.io/blog/javascript-filter-array-multiple-conditions#:~:text=The%20filter%20method%20can%20be,20%20but%20younger%20than%2030.
+
+//removing duplicate elements from an array:
+//https://www.naukri.com/learning/articles/remove-duplicates-javascript-array/
