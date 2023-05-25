@@ -30,4 +30,15 @@ function persistence(num) {
   return i;
 }
 
+function persistence(num) {
+    //initialize a count
+    let count = 0;
+    //execute the while loop and keep updating the value of local scoped num until desired value
+    while(num > 9){
+      num = num.toString().split("").map(a => +a).reduce((acc, curr) => acc * curr)
+      count++
+    }
+    return count;
+  }
+
 
