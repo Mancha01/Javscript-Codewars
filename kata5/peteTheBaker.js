@@ -6,7 +6,7 @@
 function cakes(recipe, available) {
   return Object.keys(recipe).reduce(function (val, ingredient) {
     return Math.min(
-      Math.floor(available[ingredient] / recipe[ingredient] || 0),
+      Math.floor(available[ingredient] / recipe[ingredient] || 0), //logical OR(||) short circuit evaluation
       val
     );
   }, Infinity);
@@ -15,7 +15,7 @@ function cakes(recipe, available) {
 //Solution II:
 const cakes = (needs, has) =>
   Math.min(
-    ...Object.keys(needs).map((key) => Math.floor(has[key] / needs[key] || 0))
+    ...Object.keys(needs).map((key) => Math.floor(has[key] / needs[key] || 0)) //logical OR(||) short circuit evaluation in the preceding logic
   );
 
 //Solution III:
