@@ -21,3 +21,29 @@ Approach
 1.3 If the complement exists, return the indices of the current element and the complement.
 1.4 If the complement does not exist, add the element and its index to the hash map.
 3 If no pair is found, return null or an empty result. */
+
+/**
+ ** My Second attempt with explanation:
+ */
+
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSumII = function (nums, target) {
+  //create a new map to store the potential complement and indices
+  const indexMap = new Map();
+  //iterate through the array and crosscheck map for complement
+  for (let i = 0; i < nums.length; i++) {
+    //initialize complement which will change on each iteration
+    const complement = target - nums[i];
+    //check if complement exists and then return the index of the complement and the index of current value that was subtracted to get complement
+    if (indexMap.has(complement)) {
+      return [indexMap.get(complement), i];
+    }
+    indexMap.set(nums[i], i);
+  }
+
+  return [];
+};
