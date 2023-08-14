@@ -1,7 +1,7 @@
 //Anagrams
 //Given two strings, write a function called validAnagram to determine if the second string is an anagram of the first.
 //In my own words: Given two strings, write a function that determines if one string (each character of said string) is equal to another, regardless of order.
-//What inputs go into the problem? strings
+//What inputs go into the problem? strings 
 //What output should come from the solution of the problem? A boolean true or false, true for valid anagram
 //Can the output be determined from the inputs? yes
 //How should I label the important pieces of data that are a part of the problem? string1, string2, obj1 , obj2
