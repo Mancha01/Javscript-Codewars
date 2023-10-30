@@ -22,3 +22,19 @@ var removeDuplicates = function (nums) {
   }
   return i;
 };
+
+//another approach I came up with:
+var removeDuplicates = function(nums) {
+  let left = 1;
+  let right = 1;
+  while(right < nums.length){
+if(nums[left - 1] != nums[right]){
+nums[left] = nums[right]
+left++
+right++
+}else{
+    right++
+}
+  }
+return left
+}; 
