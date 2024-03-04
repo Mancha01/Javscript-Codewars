@@ -17,6 +17,7 @@ function sselectionSort(arr) {
   return arr;
 }
 
+//my preferred
 // ES2015 VERSION
 function selectionSort(arr) {
   const swap = (arr, idx1, idx2) =>

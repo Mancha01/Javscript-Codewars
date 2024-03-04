@@ -1,6 +1,6 @@
 //Implement a function called countUniqueValues, which accepts a sorted array and counts the unique values in the array, there can be negative numbers in the array but it will always be sorted.
 
-//In my own words: Create a function called countUniqueValues, the input of the function will be an array and will be a sorted array. Not that the array may have negative numbers.
+//In my own words: Create a function called countUniqueValues, the input of the function will be an array and will be a sorted array. Note that the array may have negative numbers.
 
 //What inputs go into the problem? array
 //What output should come from the solution of the problem? an integer with a count of the unique values. 0 if the array is empty
@@ -58,4 +58,4 @@ function countUniqueValuesI(arr) {
   }
   return i + 1;
 }
-countUniqueValues([1, 2, 2, 5, 7, 7, 99]);
+countUniqueValuesI([1, 2, 2, 5, 7, 7, 99]);
