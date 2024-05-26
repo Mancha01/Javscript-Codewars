@@ -1,3 +1,18 @@
+// Radix Sort Pattern:
+// -Create function to get digit
+// -Create function to count number of digits
+// -Create function to give us the number of digits of the largest number
+
+// Radix Pseudocode:
+// -Define a function that accepts a list of numbers
+// -Figure out how many digits the largest number has
+// -loop from k = 0 to the largest number of digits
+// -For each iteration of the loop:
+// 	*Create buckets for each digit(0 - 9)
+// 	*Place each number in the corresponding bucket based on its kth digit
+// -Replace our existing array with values in our buckets, starting with 0 and going up to 9
+// -Return list at the end.
+
 function getDigit(num, i) {
   return Math.floor(Math.abs(num) / Math.pow(10, i)) % 10;
 }

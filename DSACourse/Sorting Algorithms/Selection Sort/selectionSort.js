@@ -1,3 +1,10 @@
+// Selection Sort Pattern:
+// -Store the first element as the smallest value you've seen so far.
+// -Compare this item to the next item in the array until you find a smaller number.
+// -if a smaller number is found, designate that smaller number to be the new minimum and continue to the end of the array
+// -If the minimum is not the value you initially begin with, swap those values.
+// -Repeat this with the next element until array is sorted.
+
 // LEGACY VERSION (non ES2015 syntax)
 function sselectionSort(arr) {
   for (var i = 0; i < arr.length; i++) {

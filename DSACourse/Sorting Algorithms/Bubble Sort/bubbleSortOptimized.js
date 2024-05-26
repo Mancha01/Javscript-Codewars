@@ -1,3 +1,10 @@
+// Bubble Sort Pattern:
+// Compare adjacent elements, swap if needed.
+// Repeat process until no more swaps occur.
+// Start from beginning and end of array, move towards start.
+// Factor in noSwaps optimization
+// Return the sorted array.
+
 // Optimized BubbleSort with noSwaps
 function bubbleSort(arr) {
   var noSwaps;
